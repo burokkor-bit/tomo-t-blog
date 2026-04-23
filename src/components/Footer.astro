@@ -1,0 +1,42 @@
+---
+const today = new Date();
+---
+
+<footer>
+	<div class="footer-inner">
+		<p class="copyright">&copy; {today.getFullYear()} tomo-t blog All rights reserved.</p>
+		<nav class="footer-nav">
+			<a href="/about">このブログについて</a>
+			<a href="/blog">記事一覧</a>
+		</nav>
+	</div>
+</footer>
+<style>
+	footer {
+		padding: 2em 1em 3em;
+		background: linear-gradient(var(--gray-gradient)) no-repeat;
+		color: rgb(var(--gray));
+		text-align: center;
+	}
+	.footer-inner {
+		max-width: 960px;
+		margin: 0 auto;
+	}
+	.copyright {
+		margin: 0 0 0.5em;
+		font-size: 0.85em;
+	}
+	.footer-nav {
+		display: flex;
+		justify-content: center;
+		gap: 1.5em;
+		font-size: 0.85em;
+	}
+	.footer-nav a {
+		color: rgb(var(--gray));
+		text-decoration: none;
+	}
+	.footer-nav a:hover {
+		color: rgb(var(--gray-dark));
+	}
+</style>
